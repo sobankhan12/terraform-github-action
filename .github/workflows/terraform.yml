@@ -24,4 +24,5 @@ jobs:
           run: terraform plan
         - name: Terrafom apply
           id: apply
+          if: github.event_name == "push"
           run: terraform apply --auto-approve
