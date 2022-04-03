@@ -1,4 +1,4 @@
-name: "terrafom-action1"
+name: "terrafom-action"
 on:
   push:
     branches:
