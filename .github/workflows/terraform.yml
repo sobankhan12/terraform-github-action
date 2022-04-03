@@ -9,8 +9,8 @@ jobs:
       name: "terraform"
       runs-on: ubuntu-latest
       env:
-        AWS_ACCESS_KEY_ID: ${{secret.AWS_ACCESS_KEY_ID}}
-        AWS_SECRET_ACCESS_KEY: ${{secret.AWS_SECRET_ACCESS_KEY}}
+        AWS_ACCESS_KEY_ID: ${{secret.ACCESS_KEY}}
+        AWS_SECRET_ACCESS_KEY: ${{secret.SECRET_KEY}}
       steps:
         - name: Checkout
           uses: actions/checkout@v2
